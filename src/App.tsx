@@ -15,6 +15,7 @@ function App() {
         <div className="image-container">
           <img src={logo} alt="company-logo" />
         </div>
+
         <div className="left-content-container">
           <p className="instructions">
             Use our weather app to see the weather around the world
@@ -24,6 +25,7 @@ function App() {
           </label>
           <Inputfield />
         </div>
+
         <div className="bottom-left-container">
           <div className="lat-lon-container">
             <p className="bottom-left-text">
