@@ -1,0 +1,31 @@
+.temp-circle-container {
+  display: flex;
+  gap: 5px;
+}
+
+.current-temp-text {
+  font-size: 65px;
+  line-height: 65px;
+  color: #ffffff;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: -7.5px;
+}
+
+.circle {
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 8.5px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+@media (min-width: 1000px) {
+  .current-temp-text {
+    font-size: 130px;
+    line-height: 130px;
+  }
+}

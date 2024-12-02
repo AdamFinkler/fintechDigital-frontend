@@ -1,0 +1,44 @@
+.input-field-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: #ffff;
+  padding: 8px;
+  gap: 8px;
+}
+
+.input-message {
+  position: absolute;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: red;
+}
+button {
+  border: none;
+  cursor: pointer;
+  font: normal normal 300 18px/27px Heebo;
+  border-radius: 10px;
+  padding: 4px 16px;
+  background-color: #046b3b;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #03532e;
+}
+input {
+  border: none;
+  outline: none;
+  width: 70%;
+}
+
+.input-error-message-container {
+  display: flex;
+  text-align: right;
+  position: absolute;
+}

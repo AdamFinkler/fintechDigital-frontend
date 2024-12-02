@@ -1,0 +1,154 @@
+.box-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 25px 25.5px 7px 25.5px;
+  background-color: #27737d;
+  row-gap: 8px;
+}
+
+.box-container.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.no-data {
+  color: #ffff;
+}
+
+.location-time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-text {
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  font-size: 13x;
+  line-height: 13px;
+  font-family: Heebo;
+  letter-spacing: 0px;
+  color: #e8f1f2;
+  opacity: 1;
+}
+
+.country-text {
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 11px;
+  font-family: Heebo;
+  letter-spacing: 0px;
+  color: #a8c6cb;
+  opacity: 1;
+}
+
+.current-date-text {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 9px;
+  line-height: 11px;
+  font-family: Heebo;
+  letter-spacing: 0px;
+  color: #a8c6cb;
+  opacity: 1;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp-and-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp-description-text {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 15px;
+  font-family: Heebo;
+  letter-spacing: 0px;
+  color: #e8f1f2;
+  opacity: 1;
+}
+
+.weather-conditions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3px;
+  width: 100%;
+}
+
+.hourly-temp-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 3px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .city-text {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .temp-description-text {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .country-text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .current-date-text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .weather-conditions-container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .city-text {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .temp-description-text {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .country-text {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .current-date-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .right-container {
+    padding: 10px;
+  }
+  .hourly-temp-container {
+    gap: 5px;
+  }
+}
